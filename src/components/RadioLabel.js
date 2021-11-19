@@ -4,7 +4,7 @@ const RadioLabel = ({label}) => {
     
     return (
         <>
-            <label>
+            <label data-testid="radio-label">
                 <input type="radio" name="radio" />{label}
             </label>
         </>

@@ -6,15 +6,17 @@ import RadioDatePicker from './components/RadioDatePicker';
 import RadioSelect from './components/RadiosSelect';
 
 function App() {
-
+  const labels = ["Radio A", "Radio B", "Radio C"]
   return (
     <div className="app">
       <h1>Home Test</h1>
       <p>Name</p>
       <div className="radio-label">
-        <RadioLabel label="Radio A"/>
-        <RadioLabel label="Radio B"/>
-        <RadioLabel label="Radio C"/>
+        {
+          labels.map((label) => {
+            return <RadioLabel label={label}/>
+          })
+        }
       </div>
       <p>Subcomponent</p>
       <div className="radio-sub">
